@@ -19,8 +19,8 @@ class CreateHolidaysTable extends Migration
             $table->string('city', 50);
             $table->string('departure', 20);
             $table->string('arrival', 20);
-            $table->time('departure_time')->unsigned();
-            $table->time('arrival_time')->unsigned();
+            $table->time('departure_time', 0);
+            $table->time('arrival_time', 0);
             $table->string('address', 100);
             $table->string('type', 50);
             $table->text('description');

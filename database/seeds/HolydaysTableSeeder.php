@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Holiday;
 use Faker\Generator as Faker;
+use App\Holiday;
 
-class HolidaysTableSeeders extends Seeder
+class HolydaysTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
