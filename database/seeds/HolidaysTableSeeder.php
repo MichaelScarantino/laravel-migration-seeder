@@ -4,7 +4,7 @@ use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 use App\Holiday;
 
-class HolydaysTableSeeder extends Seeder
+class HolidaysTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -30,7 +30,7 @@ class HolydaysTableSeeder extends Seeder
             $new_holiday->address = $faker->streetAddress();
             $new_holiday->type = $faker->randomElement($types);
             $new_holiday->description = $faker->text(500);
-            $new_holiday->price = $faker->rand(400, 10000);
+            $new_holiday->price = rand(400, 10000);
             $new_holiday->save();
 
         }
